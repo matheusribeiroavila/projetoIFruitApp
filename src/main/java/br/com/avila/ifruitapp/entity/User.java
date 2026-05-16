@@ -1,6 +1,14 @@
 package br.com.avila.ifruitapp.entity;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "tbl_user")
 public class User {
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String email;

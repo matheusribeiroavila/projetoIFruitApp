@@ -29,5 +29,9 @@ public class UserService {
         return null;
     }
 
+    public List<User> retornaTodosUsers(){
+        return this.lista;
+    }
+
 
 }
